@@ -15,7 +15,7 @@ router.get("/getAllUsers", authMiddleware, getAllUsersController);
 //GET METHOD || DOCTORS
 router.get("/getAllDoctors", authMiddleware, getAllDoctorsController);
 
-router.get("/deleteUsers", authMiddleware, deleteUserController);
+router.delete("/deleteUsers/:userId", authMiddleware, deleteUserController);
 
 //POST ACCOUNT STATUS
 router.post(
